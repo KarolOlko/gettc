@@ -189,15 +189,9 @@ module Gettc
       jwt_token = jwt_token_response["token"]
       raise AuthTokenError.new(@account, jwt_token_response, "Failed to acquire a JWT token") unless jwt_token
 
-      refresh_token_response = JSON(post_json("http://api.topcoder.com/v2/reauth", {
-        token: jwt_token
-      }).body)
-      refresh_token = refresh_token_response["token"]
-      raise AuthTokenError.new(@account, refresh_token_response, "Failed to acquire a Refresh token") unless refresh_token
-
       response = post_json("https://api.topcoder.com/v3/authorizations", {
         param: {
-          externalToken: refresh_token
+          externalToken: jwt_token 
         }
       })
       raw_cookie = response["set-cookie"]
