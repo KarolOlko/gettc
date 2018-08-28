@@ -62,7 +62,7 @@ class ParseTest < Test::Unit::TestCase
       assert_equal hash["source"], problem.source, hash["message"]
       assert_equal hash["definitions_count"], problem.definitions.size, hash["message"]
       assert_equal hash["notes_count"], problem.notes.size, hash["message"]
-      assert_equal hash["contraints_count"], problem.constraints.size, hash["message"]
+      assert_equal hash["constraints_count"], problem.constraints.size, hash["message"]
       assert_equal hash["examples_count"], problem.examples.size, hash["message"]
       assert_equal hash["systests_count"], problem.systests.size, hash["message"]
       assert_equal hash["images_count"], problem.images.size, hash["message"]

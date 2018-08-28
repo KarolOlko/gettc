@@ -11,7 +11,7 @@ problems:
     solution_id: 22717415
     definitions_count: 5
     notes_count: 0
-    contraints_count: 7
+    constraints_count: 7
     examples_count: 5
     systests_count: 228
     images_count: 4
@@ -24,7 +24,7 @@ problems:
     solution_id: 16063200
     definitions_count: 5
     notes_count: 1
-    contraints_count: 1
+    constraints_count: 1
     examples_count: 5
     systests_count: 118
     images_count: 0
@@ -36,7 +36,7 @@ problems:
     round_id: 13907
     definitions_count: 5
     notes_count: 0
-    contraints_count: 4
+    constraints_count: 4
     examples_count: 4
     systests_count: 0
     images_count: 0
@@ -48,7 +48,7 @@ problems:
     round_id: 14153
     definitions_count: 5
     notes_count: 2
-    contraints_count: 10
+    constraints_count: 10
     examples_count: 5
     systests_count: 0
     images_count: 2
@@ -60,10 +60,24 @@ problems:
     round_id: 10008
     definitions_count: 5
     notes_count: 0
-    contraints_count: 4
+    constraints_count: 4
     examples_count: 6
     systests_count: 0
     images_count: 2
     competition: SRM 328
     difficulty: 6
     description: An old problem with no system tests
+#   -
+#     id: 6620
+#     name: DateFieldCorrection
+#     source: Single Round Match 375 Round 1 - Division I, Level Two
+#     round_id: 10794
+#     definitions_count: 5
+#     notes_count: 0
+#     constraints_count: 4
+#     examples_count: 6
+#     systests_count: 0
+#     images_count: 2
+#     competition: SRM 375
+#     difficulty: 6
+#     description: An old problem that failed to parse method definition

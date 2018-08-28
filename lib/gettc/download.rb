@@ -195,7 +195,7 @@ module Gettc
         }
       })
       raw_cookie = response["set-cookie"]
-
+      raw_cookie.gsub! ' tcsso', '; tcsso'
       unless CGI::Cookie.parse(raw_cookie).has_key?("tcsso")
         raise DownloadError.new(raw_cookie, "Server refused to send a tcsso cookie")
       end
